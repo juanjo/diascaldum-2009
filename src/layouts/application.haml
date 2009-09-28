@@ -1,0 +1,89 @@
+!!!
+%html{ :xmlns => 'http://www.w3.org/1999/xhtml', 'xml:lang' => 'en', :lang => 'en' }
+  %head
+    %meta{ 'http-equiv' => 'Content-Type', :content => 'text/html', :charset => 'utf-8' }
+    %title DC2009 :: D&iacute;as Caldum V - Universidad de Murcia
+    %meta{:name => "keywords", :content => "software libre, gnu, linux, ubuntu, jornadas, universidad de murcia, murcia, cfengine, git, vdi, xen, owasp, morfeo, grass, brutalix, tcos, conferencia, taller, fuentes abiertas, atica, cenatic" }
+    %meta{:name => "description", :content => "Días Caldum es una reunión de personas interesadas en el software libre y sus aplicaciones. Personas con poca o ninguna experiencia dispuestos a aprender, así como entendidos en la materia. La principal idea es ayudar a los que buscan conocimiento: programas, concepto, modos de trabajo, ..." } 
+    %meta{:name => 'author', :content => 'Ática - Sección Telemática' }
+    %meta{:name => 'robots', :content => 'ALL' }
+
+    = blueprintcss :compressed => false
+    = stylesheets
+  %body
+    .headcaldum
+      DIASCALDUM2009
+    .content
+      .container
+        .header
+          %div{ :class => 'span-17' }
+            %ul{ :class => 'topmenu' }
+              %li= link "Inicio", "/"
+              %li= link "Programa", "ponencias/index.html"
+              %li= link "Eventos", "jornadas/eventos.html"
+              %li= link "Ubicaci&oacute;n", "jornadas/ubicacion.html"
+              %li= link "Jornadas", "jornadas/index.html"
+          %div{ :class => 'span-6 last logo' }
+            = img "logo.png"
+      .container
+        %div{ :class => 'span-18 append-1' }
+          = yield
+        %div{ :class => 'span-5 last' }
+
+          %ul{ :class => 'menu' }
+            %li= link "P&aacute;gina de inicio", "/"
+            %li= link "Jornadas Software Libre", "jornadas/index.html"
+            %li= link "Notas de prensa", "jornadas/prensa.html"
+            %li= link "Organización", "jornadas/organizacion.html"
+            %li= link "Colaboradores", "jornadas/colaboradores.html"
+            %li= link "Eventos", "jornadas/eventos.html"
+          %br/
+          %ul{ :class => 'menu' }
+            %li= link "Retransmisión en directo", "jornadas/streaming.html"
+            %li= link "Chat de la conferencia", "jornadas/chat.html"
+            %li= link "Zona Wifi/EduRoam", "jornadas/wifi.html"
+
+          %p{:align => 'center', :id => 'logos'}
+            = link img("um.jpg"), 'http://www.um.es'
+            = link img("logo-vice.jpg"), 'http://www.um.es/vic-economia'
+            = link img("informatica.jpg"), 'http://www.um.es/informatica'
+            = link img("logo-atica.jpg"), 'http://www.um.es/atica'
+
+
+
+    .footer
+      .container
+        %div{ :class => 'span-8 append-1' }
+          %h2 M&aacute;s informaci&oacute;n
+          %ul
+            %li= link 'Accesia', 'http://www.accessia.es/'
+            //%li= link "Preguntas frecuentes", "jornadas/preguntas_frecuentes.html"
+            %li= link "Regi&oacute;n de Murcia", "murcia/region.html"
+            %li= link "La Universidad de Murcia", "murcia/universidad.html"
+            %li= link "Hoteles", "murcia/hoteles.html"
+            %li= link "Restaurantes", "#"
+            %li= link "Transporte", "murcia/transporte.html"
+        %div{ :class => 'span-6 append-1' }
+          %h2 D&iacute;as Caldum 5
+          %ul
+            %li= link "Jornadas Software Libre", "jornadas/index.html"
+            %li= link "Ponencias", "ponencias/index.html"
+            %li= link "Talleres", "taller/index.html"
+            //%li= link "Ponentes", "ponentes/index.html"
+            %li= link "Lugar de celebraci&oacute;n", "jornadas/ubicacion.html"
+            %li= link "Contacte con nosotros", "jornadas/contacto.html"
+
+        %div{ :class => 'span-4 append-1' }
+          %h2 Síguenos...
+          %ul
+            %li= link "Twitter", "http://twitter.com/diascaldum"
+            %li= link "Facebook", "http://www.facebook.com/group.php?gid=137045503878&ref=ts"
+            %li= link "LinkedIn", "http://www.linkedin.com/groups?gid=2037353&trk=myg_ugrp_ovr"
+            %li= link "Lista Linux-UM", "murcia/linux-um.html"
+            %li= link "Symposium", "http://symposium.um.es/event_detail/198/dias-caldum-2009.html"
+
+        %div{ :class => 'span-3 last' }
+          %p{:align => 'center'}
+            = link img("lm.png"), 'http://www.linux-magazine.es/Readers/Events'
+
+  = my_google_analytics
