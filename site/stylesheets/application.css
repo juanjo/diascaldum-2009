@@ -112,6 +112,21 @@ h2 {
         display: block; }
     .footer ul li:hover {
       background-color: #042A48; }
+  .footer #infofooter {
+    margin-top: 20px;
+    font-size: 10px; }
+    .footer #infofooter ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0; }
+      .footer #infofooter ul li {
+        border: 0;
+        width: 100%; }
+        .footer #infofooter ul li a {
+          display: inline;
+          color: #29A4FA; }
+      .footer #infofooter ul li:hover {
+        background: none; }
 
 .taller {
   margin-top: 30px; }

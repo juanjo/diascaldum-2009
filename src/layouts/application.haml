@@ -72,6 +72,7 @@
             //%li= link "Ponentes", "ponentes/index.html"
             %li= link "Lugar de celebraci&oacute;n", "jornadas/ubicacion.html"
             %li= link "Contacte con nosotros", "jornadas/contacto.html"
+            %li= link "Promociona Días Caldum 2009", "jornadas/promociona_diascaldum.html"
 
         %div{ :class => 'span-4 append-1' }
           %h2 Síguenos...
@@ -85,5 +86,15 @@
         %div{ :class => 'span-3 last' }
           %p{:align => 'center'}
             = link img("lm.png"), 'http://www.linux-magazine.es/Readers/Events'
+
+        %div{ :id => 'infofooter', :class => 'span-24  first last' }
+          %ul
+            %li
+              Website desarrollado con 
+              = link 'StaticMatic', 'http://staticmatic.rubyforge.org/'
+            %li
+              Website Source Code
+              = link 'github.com', 'http://github.com/juanjo/diascaldum-2009'
+
 
   = my_google_analytics

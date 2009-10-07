@@ -72,8 +72,7 @@
   %div{ :class => 'span-1'}
     11.00
   %div{ :class => 'span-8 last'}
-    %s
-      = link 'Grid Computing', '#'
+    = link 'Grid Computing', '#'
 
 
   %div{ :class => 'span-1'}
