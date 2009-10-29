@@ -10,7 +10,7 @@ module UserVoiceHelper
           "key: 'diascaldum'," +
           "host: 'diascaldum.uservoice.com', " +
           "forum: '31935'," +
-          "alignment: 'left'," +
+          "alignment: 'right'," +
           "background_color:'#06C'," +
           "text_color: 'white'," +
           "hover_color: '#F40D57'," +

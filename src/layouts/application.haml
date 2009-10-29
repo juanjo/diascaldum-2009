@@ -5,16 +5,14 @@
     %title DC2009 :: D&iacute;as Caldum V - Universidad de Murcia
     %meta{:name => "keywords", :content => "software libre, gnu, linux, ubuntu, jornadas, universidad de murcia, murcia, cfengine, git, vdi, xen, owasp, morfeo, grass, brutalix, tcos, conferencia, taller, fuentes abiertas, atica, cenatic" }
     %meta{:name => "description", :content => "Días Caldum es una reunión de personas interesadas en el software libre y sus aplicaciones. Personas con poca o ninguna experiencia dispuestos a aprender, así como entendidos en la materia. La principal idea es ayudar a los que buscan conocimiento: programas, concepto, modos de trabajo, ..." } 
-    %meta{:name => 'author', :content => 'Ática - Sección Telemática' }
+    %meta{:name => 'author', :content => 'Ática - Sección Telemática // Binoid.com' }
     %meta{:name => 'robots', :content => 'ALL' }
 
     = blueprintcss :compressed => false
     = stylesheets
   %body
-    #star
-      = link img("star.png"), 'jornadas/inscripcion.html'
     .headcaldum
-      DIASCALDUM2009
+      DIASCALDUM2009: 4 + 5 de Noviembre 2009
     .content
       .container
         .header
@@ -36,7 +34,7 @@
             %li= link "P&aacute;gina de inicio", "/"
             %li= link "Jornadas Software Libre", "jornadas/index.html"
             %li= link "Programa", "ponencias/index.html"
-            %li= link "Inscripción", "jornadas/inscripcion.html"
+            %li= link "Inscripción/Registro", "jornadas/inscripcion.html"
             %li= link "Notas de prensa", "jornadas/prensa.html"
             %li= link "Organización", "jornadas/organizacion.html"
             %li= link "Colaboradores", "jornadas/colaboradores.html"
@@ -99,6 +97,8 @@
             %li
               Website desarrollado con 
               = link 'StaticMatic', 'http://staticmatic.rubyforge.org/'
+              por
+              = link 'BINOID', 'http://binoid.com/'
             %li
               Website Source Code
               = link 'github.com', 'http://github.com/juanjo/diascaldum-2009'
