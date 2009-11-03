@@ -7,13 +7,15 @@
     <meta content='Días Caldum es una reunión de personas interesadas en el software libre y sus aplicaciones. Personas con poca o ninguna experiencia dispuestos a aprender, así como entendidos en la materia. La principal idea es ayudar a los que buscan conocimiento: programas, concepto, modos de trabajo, ...' name='description' />
     <meta content='Ática - Sección Telemática // Binoid.com' name='author' />
     <meta content='ALL' name='robots' />
+
     <script src='flowplayer/flowplayer-3.1.4.min.js' type='text/javascript'></script>
-    <link href="../stylesheets/blueprint/screen.css" media="screen, projection" rel="stylesheet" type="text/css"/>
-    <link href="../stylesheets/blueprint/print.css" media="print" rel="stylesheet" type="text/css"/>
+
+    <link href="stylesheets/blueprint/screen.css" media="screen, projection" rel="stylesheet" type="text/css"/>
+    <link href="stylesheets/blueprint/print.css" media="print" rel="stylesheet" type="text/css"/>
     <!--[if IE]>
-      <link href="../stylesheets/blueprint/lib/ie.css" media="screen, projection" rel="stylesheet" type="text/css"/>
+      <link href="stylesheets/blueprint/lib/ie.css" media="screen, projection" rel="stylesheet" type="text/css"/>
     <![endif]-->
-    <link href="../stylesheets/application.css" media="all" rel="stylesheet" type="text/css"/>
+    <link href="stylesheets/application.css" media="all" rel="stylesheet" type="text/css"/>
   </head>
   <body>
     <div class='headcaldum'>
@@ -25,54 +27,71 @@
           <div class='span-17'>
             <ul class='topmenu'>
               <li><a href="/">Inicio</a></li>
-              <li><a href="../ponencias/index.html">Programa</a></li>
-              <li><a href="../jornadas/inscripcion.html">Inscripción</a></li>
-              <li><a href="../jornadas/ubicacion.html">Ubicaci&oacute;n</a></li>
-              <li><a href="../jornadas/index.html">Jornadas</a></li>
+              <li><a href="ponencias/index.html">Programa</a></li>
+              <li><a href="jornadas/inscripcion.html">Inscripción</a></li>
+              <li><a href="jornadas/ubicacion.html">Ubicaci&oacute;n</a></li>
+              <li><a href="jornadas/index.html">Jornadas</a></li>
             </ul>
           </div>
           <div class='span-6 last logo'>
-            <img alt="Logo" src="../images/logo.png"/>
+            <img alt="Logo" src="images/logo.png"/>
           </div>
         </div>
       </div>
       <div class='container'>
         <div class='span-18 append-1'>
-          <div class='span-18'>
-            <h2>Acreditación Días Caldum V</h2>
+          <div class='span-18 last'>
+            <h1>Días Caldum TV</h1>
             <p>
-              Con el fin de poder entregar créditos y certificados de asistencia a aquellos oyentes que lo requieran, es necesario acreditarse antes de entrar a los conferencias.
+              Días Caldum es una reunión de personas interesadas en el software libre y sus aplicaciones. Personas con poca o ninguna experiencia dispuestos a aprender, así como entendidos en la materia. La principal idea es ayudar a los que buscan conocimiento: programas, concepto, modos de trabajo, ...
             </p>
             <p>
-              Te regalaremos una bonita camiseta de las jornadas. :P
+              Uno de los objetivos del Proyecto Caldum es la utilización de conocimiento y software abierto como solución a los problemas planteados por la docencia y la investigación.
             </p>
-            <p>
-              <a href="../ponencias/index.html">Volver al programa de ponencias</a>
-            </p>
+            <a class='player' id='live'>
+              <img alt="Showme" src="http://static.flowplayer.org/img/player/btn/showme.png"/>
+            </a>
+
+            <script language='JavaScript'>
+              $f('live', '/home/ishka/public_html/diascaldum-2009/site/flowplayer/flowplayer-3.1.5.swf', { 
+
+                  clip: { 
+                    url: 'metacafe', 
+                    provider: 'influxis'
+                }, 
+                
+                plugins: { 
+                  influxis: { 
+                    url: 'flowplayer.rtmp-3.1.3.swf', 
+                    netConnectionUrl: 'rtmp://cyzy7r959.rtmphost.com/flowplayer'
+              }
+          }
+        });
+            </script>
           </div>
         </div>
         <div class='span-5 last'>
           <ul class='menu'>
             <li><a href="/">P&aacute;gina de inicio</a></li>
-            <li><a href="../jornadas/index.html">Jornadas Software Libre</a></li>
-            <li><a href="../ponencias/index.html">Programa</a></li>
-            <li><a href="../jornadas/inscripcion.html">Inscripción/Registro</a></li>
-            <li><a href="../jornadas/prensa.html">Notas de prensa</a></li>
-            <li><a href="../jornadas/organizacion.html">Organización</a></li>
-            <li><a href="../jornadas/colaboradores.html">Colaboradores</a></li>
-            <li><a href="../jornadas/eventos.html">Eventos</a></li>
+            <li><a href="jornadas/index.html">Jornadas Software Libre</a></li>
+            <li><a href="ponencias/index.html">Programa</a></li>
+            <li><a href="jornadas/inscripcion.html">Inscripción/Registro</a></li>
+            <li><a href="jornadas/prensa.html">Notas de prensa</a></li>
+            <li><a href="jornadas/organizacion.html">Organización</a></li>
+            <li><a href="jornadas/colaboradores.html">Colaboradores</a></li>
+            <li><a href="jornadas/eventos.html">Eventos</a></li>
           </ul>
           <br />
           <ul class='menu'>
-            <li><a href="../jornadas/streaming.html">Retransmisión en directo</a></li>
-            <li><a href="../jornadas/chat.html">Chat de la conferencia</a></li>
-            <li><a href="../jornadas/wifi.html">Zona Wifi/EduRoam</a></li>
+            <li><a href="jornadas/streaming.html">Retransmisión en directo</a></li>
+            <li><a href="jornadas/chat.html">Chat de la conferencia</a></li>
+            <li><a href="jornadas/wifi.html">Zona Wifi/EduRoam</a></li>
           </ul>
           <p align='center' id='logos'>
-            <a href="http://www.um.es"><img alt="Um" src="../images/um.jpg"/></a>
-            <a href="http://www.um.es/vic-economia"><img alt="Logo vice" src="../images/logo-vice.jpg"/></a>
-            <a href="http://www.um.es/informatica"><img alt="Informatica" src="../images/informatica.jpg"/></a>
-            <a href="http://www.um.es/atica"><img alt="Logo atica" src="../images/logo-atica.jpg"/></a>
+            <a href="http://www.um.es"><img alt="Um" src="images/um.jpg"/></a>
+            <a href="http://www.um.es/vic-economia"><img alt="Logo vice" src="images/logo-vice.jpg"/></a>
+            <a href="http://www.um.es/informatica"><img alt="Informatica" src="images/informatica.jpg"/></a>
+            <a href="http://www.um.es/atica"><img alt="Logo atica" src="images/logo-atica.jpg"/></a>
           </p>
         </div>
       </div>
@@ -84,23 +103,23 @@
           <ul>
             <li><a href="http://www.accessia.es/">Accesia</a></li>
             <!-- /%li= link "Preguntas frecuentes", "jornadas/preguntas_frecuentes.html" -->
-            <li><a href="../murcia/region.html">Regi&oacute;n de Murcia</a></li>
-            <li><a href="../murcia/universidad.html">La Universidad de Murcia</a></li>
-            <li><a href="../murcia/hoteles.html">Hoteles</a></li>
+            <li><a href="murcia/region.html">Regi&oacute;n de Murcia</a></li>
+            <li><a href="murcia/universidad.html">La Universidad de Murcia</a></li>
+            <li><a href="murcia/hoteles.html">Hoteles</a></li>
             <li><a href="#">Restaurantes</a></li>
-            <li><a href="../murcia/transporte.html">Transporte</a></li>
+            <li><a href="murcia/transporte.html">Transporte</a></li>
           </ul>
         </div>
         <div class='span-6 append-1'>
           <h2>D&iacute;as Caldum 5</h2>
           <ul>
-            <li><a href="../jornadas/index.html">Jornadas Software Libre</a></li>
-            <li><a href="../ponencias/index.html">Ponencias</a></li>
-            <li><a href="../taller/index.html">Talleres</a></li>
+            <li><a href="jornadas/index.html">Jornadas Software Libre</a></li>
+            <li><a href="ponencias/index.html">Ponencias</a></li>
+            <li><a href="taller/index.html">Talleres</a></li>
             <!-- /%li= link "Ponentes", "ponentes/index.html" -->
-            <li><a href="../jornadas/ubicacion.html">Lugar de celebraci&oacute;n</a></li>
-            <li><a href="../jornadas/contacto.html">Contacte con nosotros</a></li>
-            <li><a href="../jornadas/promociona_diascaldum.html">Promociona Días Caldum 2009</a></li>
+            <li><a href="jornadas/ubicacion.html">Lugar de celebraci&oacute;n</a></li>
+            <li><a href="jornadas/contacto.html">Contacte con nosotros</a></li>
+            <li><a href="jornadas/promociona_diascaldum.html">Promociona Días Caldum 2009</a></li>
           </ul>
         </div>
         <div class='span-4 append-1'>
@@ -109,16 +128,16 @@
             <li><a href="http://twitter.com/diascaldum">Twitter</a></li>
             <li><a href="http://www.facebook.com/group.php?gid=137045503878&ref=ts">Facebook</a></li>
             <li><a href="http://www.linkedin.com/groups?gid=2037353&trk=myg_ugrp_ovr">LinkedIn</a></li>
-            <li><a href="../murcia/linux-um.html">Lista Linux-UM</a></li>
+            <li><a href="murcia/linux-um.html">Lista Linux-UM</a></li>
             <li><a href="http://symposium.um.es/event_detail/198/dias-caldum-2009.html">Symposium</a></li>
           </ul>
         </div>
         <div class='span-3 last'>
           <p align='center'>
-            <a href="http://www.linux-magazine.es/Readers/Events"><img alt="Lm" src="../images/lm.png"/></a>
+            <a href="http://www.linux-magazine.es/Readers/Events"><img alt="Lm" src="images/lm.png"/></a>
           </p>
           <p align='center'>
-            <a href="http://lpmagazine.org/es"><img alt="Linuxpw" src="../images/colaboradores/linuxpw.png"/></a>
+            <a href="http://lpmagazine.org/es"><img alt="Linuxpw" src="images/colaboradores/linuxpw.png"/></a>
           </p>
         </div>
         <div class='span-24  first last' id='infofooter'>
