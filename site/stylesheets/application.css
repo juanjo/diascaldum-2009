@@ -16,6 +16,10 @@ a, a:visited, a:link {
 a:hover {
   color: #ffcc00; }
 
+hr {
+  background-color: #002D4E;
+  color: #001829; }
+
 h1 {
   color: #29A4FA;
   font-size: 25px;
