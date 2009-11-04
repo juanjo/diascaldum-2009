@@ -1,13 +1,24 @@
 %div{ :class => 'span-18 last'}
   %h1 Días Caldum TV
-  %p
-    Días Caldum es una reunión de personas interesadas en el software libre y sus aplicaciones. Personas con poca o ninguna experiencia dispuestos a aprender, así como entendidos en la materia. La principal idea es ayudar a los que buscan conocimiento: programas, concepto, modos de trabajo, ...
-
-  %p
-    Uno de los objetivos del Proyecto Caldum es la utilización de conocimiento y software abierto como solución a los problemas planteados por la docencia y la investigación.
 
   %a{:class => 'player', :id => 'live' }
-    =img "http://static.flowplayer.org/img/player/btn/showme.png"
 
   =flowplayer
 	
+  %br/
+
+  %h2 Otras formas de visualización
+	
+  %ul
+    %li 
+      %b 
+        Alta calidad (MPEG4)    1Mbps   
+      = link 'http://tv.um.es/directo/index/canal/1', 'http://tv.um.es/directo/index/canal/1'
+    %li 
+      %b
+        Baja calidad (MPEG4)  256Kbps
+      = link 'http://tv.um.es/directo/index/canal/2', 'http://tv.um.es/directo/index/canal/2'
+
+  %p
+    Para más información puede ver la página de 
+    =link 'streaming', 'jornadas/streaming.html'

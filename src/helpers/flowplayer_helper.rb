@@ -6,14 +6,14 @@ module FlowplayerHelper
     "<script language='JavaScript'>" +
       "flowplayer('live', 'flowplayer/flowplayer-3.1.5.swf', {" +
         " clip: {" +
-          " url: 'my_lifecast'," +
+          " url: 'livestream'," +
           " live: true," +
           " provider: 'influxis'" +
         "}," +
         " plugins: {" +
           " influxis: {" +
             " url: 'flowplayer/flowplayer.rtmp-3.1.3.swf'," +
-            " netConnectionUrl: 'rtmp://cyzy7r959.rtmphost.com/flowplayer'" +
+            " netConnectionUrl: 'rtmp://ovis2.um.es/live/'" +
           "}" +
         "}" +
       "});" +
